@@ -24,7 +24,11 @@
 
       function deleteTask(){
         var outcome="";
-        arr.pop();
+
+        var dlt = prompt("which task do u want to delete");
+        if (dlt != ""){
+          arr.splice(dlt-1,1);
+        }
         for(i=0; i<arr.length; i++){
           outcome = outcome + "No."+ [i+1] +" : "+arr[i] +"<br/>";
         }
