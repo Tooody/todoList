@@ -26,7 +26,7 @@
         var outcome="";
 
         var dlt = prompt("which task do u want to delete");
-        if (0< dlt< arr.length){
+        if (dlt != ""){
           arr.splice(dlt-1,1);
         }
         for(i=0; i<arr.length; i++){
@@ -39,8 +39,8 @@
         var outcome = "";
 
         var edit = prompt("which task do u want to edit");
-        if (edit != null){
-
+        if (edit != ""){
+          arr[edit-1] = prompt("content correct");
         }
         for(i=0; i<arr.length; i++){
           outcome = outcome + "No."+ [i+1] +" : "+arr[i] +"<br/>";
